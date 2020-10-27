@@ -24,10 +24,10 @@ public class HttpServer01 {
             PrintWriter printWriter = new PrintWriter(socket.getOutputStream(), true);
             printWriter.println("HTTP/1.1 200 OK");
             // 不加Length，浏览器打不开
-            printWriter.println("Content-Length: 9");
+            printWriter.println("Content-Length: 10");
             printWriter.println("Content-Type: text/html; charset=utf-8");
             printWriter.println();
-            printWriter.write("hello,nio");
+            printWriter.write("helloworld");
             printWriter.println();
             printWriter.close();
             socket.close();

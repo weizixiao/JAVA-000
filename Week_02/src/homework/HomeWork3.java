@@ -12,10 +12,11 @@ import java.io.IOException;
 
 public class HomeWork3 {
     public static void main(String[] args) {
+        // 服务请求的是src/nio/HttpServer01
         // 获得Http客户端(可以理解为:你得先有一个浏览器;注意:实际上HttpClient与浏览器是不一样的)
         CloseableHttpClient httpClient = HttpClientBuilder.create().build();
         // 创建Get请求
-        HttpGet httpGet = new HttpGet("http://localhost:8801/test");
+        HttpGet httpGet = new HttpGet("http://localhost:8801");
         // 响应模型
         CloseableHttpResponse response = null;
         try {
