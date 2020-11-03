@@ -1,0 +1,7 @@
+defaulthost: '127.0.0.1:8088'
+routers:
+  user:
+    secret: 'true'
+    host: '127.0.0.1:8087'
+  park:
+    host: '127.0.0.1:8089'
