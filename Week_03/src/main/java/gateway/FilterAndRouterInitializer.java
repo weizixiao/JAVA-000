@@ -48,7 +48,7 @@ public class FilterAndRouterInitializer {
     }
 
     public void setFilter () {
-        File file = new File("src/filter.yml");
+        File file = new File("src/gateway.yml");
 
         if (file.exists()) {
             this.setFilterStatus(true);
